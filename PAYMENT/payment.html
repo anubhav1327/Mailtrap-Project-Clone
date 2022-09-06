@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c0ab3779c.js" crossorigin="anonymous"></script>
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <h1>Payment Method</h1>
+    <div id="head">
+        <i class="fa-solid fa-credit-card"></i>
+        <h2>New Card</h2>
+    </div>
+    <div id="form1">
+        <form>
+            <label >Cardholder Name</label>
+            <input type="text" id="name">
+
+            <label >Card data</label>
+            <div id="cardholder">
+                <div >
+                    <i class="fa-solid fa-credit-card"></i>
+                    <input type="tel" id="card" placeholder="Card number">
+                </div>
+                <div>
+                    <input type="text" id="date" placeholder="MM/YY">
+                    <input type="number" id="cvc" placeholder="CVC">
+                </div>
+            </div>
+            <button id="save" >Save</button>
+            
+        </form>
+    </div>
+</body>
+</html>
+<script src="payment.js"></script>
