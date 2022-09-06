@@ -12,22 +12,22 @@
     <h1>Payment Method</h1>
     <div id="head">
         <i class="fa-solid fa-credit-card"></i>
-        <h2>New Card</h2>
+        <h3>New Card</h3>
     </div>
     <div id="form1">
         <form>
             <label >Cardholder Name</label>
-            <input type="text" id="name">
+            <input type="text" id="name" required>
 
             <label >Card data</label>
             <div id="cardholder">
                 <div >
                     <i class="fa-solid fa-credit-card"></i>
-                    <input type="tel" id="card" placeholder="Card number">
+                    <input type="tel" id="card" placeholder="Card number" required !important>
                 </div>
                 <div>
-                    <input type="text" id="date" placeholder="MM/YY">
-                    <input type="number" id="cvc" placeholder="CVC">
+                    <input type="text" id="date" placeholder="MM/YY" required !importan>
+                    <input type="number" id="cvc" placeholder="CVC" required !importan>
                 </div>
             </div>
             <button id="save" >Save</button>
