@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c0ab3779c.js" crossorigin="anonymous"></script>
+    <title>Payment-1</title>
+    <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+    <h1>Change Plan</h1>
+    <div id="form">
+        <!-- Card details -->
+        <div>
+            <div id="head">
+                <i class="fa-solid fa-credit-card"></i>
+                <h3>Add New Card to Proceed</h3>
+            </div>
+            <div id="form1">
+                <form>
+                    <label >Cardholder Name</label>
+                    <input type="text" id="name" required>
+        
+                    <label >Card data</label>
+                    <div id="cardholder">
+                        <div >
+                            <i class="fa-solid fa-credit-card"></i>
+                            <input type="tel" id="card" placeholder="Card number" required !important>
+                        </div>
+                        <div>
+                            <input type="text" id="date" placeholder="MM/YY" required !importan>
+                            <input type="number" id="cvc" placeholder="CVC" required !importan>
+                        </div>
+                    </div>
+                    <button id="save" >Save</button>
+                    
+                </form>
+            </div>
+        </div>
+        <!-- payment -->
+        <div>
+            <div id="head">
+                <img src="https://img.icons8.com/ios/50/000000/note.png"/>
+                <h3>Add New Card to Proceed</h3>
+            </div>
+            <div id="form2">
+                <div>
+                    <h3>Individual Plan</h3>
+                    <p>5,000 test emails per month</p>
+                    <h3>$9.99</h3>
+                </div>
+                <div>
+                    <h3>Total</h3>
+                    <h3>$9.99</h3>
+                </div>
+                <div>
+                    <p>Once your payment has been processed, your account will be upgraded immediately.</p>
+                </div>
+                <button id="process">Process Payment</button>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+<script src="payment.js"></script>
