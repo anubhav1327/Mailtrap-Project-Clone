@@ -2,12 +2,36 @@
     display: flex;
 }
 #container1 div{
-   border: 1px solid black;
+    
    width: 50%;
 }
-#box1{
+#box1 div{
+    width: 100%;
+    margin: 60px 0  60px 0;
+    margin-left: 50px;
+   
+}
+#box1+div{
+    font-weight: 600;
 
 }
+#mainhead{
+    font-size: 45px;
+    margin-left: 30px;
+}
+#box1 div p{
+   width: 80%;
+   font-size: 22px;
+}
+#box1 div button{
+   padding: 20px;
+   border-radius: 5px;
+   color: white;
+   background: #22d172;
+   border: 1px solid #22d172;
+ }
+ 
+
 #box2 img{
     width: 500px;
     height: 500px;
@@ -15,20 +39,73 @@
 }
 #container2{
     width: 70%;
-    border: 1px solid black;
+    
     margin: auto;
 }
 .container2box{
  display: flex;
 }
 .container2box div img{
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 400px;
+ 
    }
 #container3{
-     color: black;
+    color: black;
     background-color: antiquewhite;
-    width: 60%;
-    height: 400px;
+    width: 90%;
+    height: 200px;
     border-radius: 5px;
+    margin: auto;
+    background-color:  #fcb900;
 }
+#container3 h1,p,button{
+ margin-left: 30px;
+}
+#container3 h1{
+    font-weight: 700;
+   }
+   #container3 p{
+    font-weight: 400;
+   }
+   #container3 button{
+    font-weight: 400;
+    padding: 15px;
+    background-color: black;
+    color: #fcb900;
+    border-radius: 4px;
+   }
+#container2 #heading{
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    font-weight: 600;
+}
+#container2 div{
+   margin-top: 60px;
+ 
+}
+#conbox1 h1{
+    margin-top: 90px;
+    font-weight: 700;
+    font-size: 2rem;
+   
+}
+#conbox1 p{
+    width: 95%;
+    font-weight: 400;
+}
+#container4 {
+    display: flex;
+}
+#container4heading{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: -20px;
+}
+
+#container4 div p,h3{
+    margin-left: 20px;
+}
+
