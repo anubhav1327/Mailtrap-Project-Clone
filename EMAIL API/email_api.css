@@ -16,6 +16,7 @@ h1{
 }
 #cardss>div{
     border: 1px solid rgb(230, 222, 222);
+    border-radius: 10px;
 }
 #cardss>div>select{
     width: 90%;

@@ -58,6 +58,7 @@ i{
 }
 #card,#date,#cvc{
     border: none;
+    
 }
 #cardholder>:last-child{
     display: grid;
