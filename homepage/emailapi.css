@@ -1,0 +1,254 @@
+#container1{
+    display: flex;
+}
+#container1 div{
+    
+   width: 50%;
+}
+#box1 div{
+    width: 100%;
+    margin: 60px 0  60px 0;
+    margin-left: 50px;
+   
+}
+#box1+div{
+    font-weight: 600;
+
+}
+#mainhead{
+    font-size: 45px;
+    margin-left: 30px;
+}
+#box1 div p{
+   width: 80%;
+   font-size: 22px;
+}
+#box1 div button{
+   padding: 20px;
+   border-radius: 5px;
+   color: white;
+   background: #22d172;
+   border: 1px solid #22d172;
+ }
+ 
+
+#box2 img{
+    width: 500px;
+    height: 500px;
+    margin-left: 40px;
+}
+#container2{
+    width: 70%;
+    
+    margin: auto;
+}
+.container2box{
+ display: flex;
+}
+.container2box div img{
+    height: 350px;
+    width: 400px;
+ 
+   }
+#container3{
+    color: black;
+    background-color: antiquewhite;
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+    margin: auto;
+    background-color:  #fcb900;
+    padding: 15px;
+
+}
+#container3 h1,p,button{
+ margin-left: 30px;
+}
+#container3 h1{
+    font-weight: 700;
+   }
+   #container3 p{
+    font-weight: 400;
+   }
+   #container3 button{
+    font-weight: 400;
+    padding: 15px;
+    background-color: black;
+    color: #fcb900;
+    border-radius: 4px;
+   }
+#container2 #heading{
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    font-weight: 600;
+}
+#container2 div{
+   margin-top: 20px;
+  
+ 
+}
+#conbox1 h1{
+    margin-top: 90px;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 30px;
+   
+}
+#conbox1 p{
+    width: 95%;
+    font-weight: 400;
+}
+#container4 {
+    display: flex;
+    
+}
+#container4 div{
+   border: 1px solid black;
+   margin: 10px;
+   border-radius: 5px;
+}
+#container4 div svg{
+    margin-left: 15px;
+    height: 50px;
+    width: 50px;
+     
+ }
+ #container4 div p{
+   font-weight: 490;
+     
+ }
+ #container4 div h3{
+   margin-bottom: -13px;
+  }
+#container4heading{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: -20px;
+}
+
+#container4 div p,h3{
+    margin-left: 20px;
+}
+
+#FAQ{
+    text-align: center;
+}
+#container7 {
+    background-color: black;
+   padding: 70px;
+    width: 100%;
+    color: aliceblue;
+   text-align: center;
+   text-align: center;
+}
+#container7 div{
+ margin-right: 120px;
+}
+#container7 div h1{
+    font-size: 60px;
+    margin-top: -20px;
+}
+#container7 div button{
+     margin-right: 30px;
+     padding: 13px;
+     width: 80px;
+     border-radius: 9px;
+     color: white;
+   background: #22d172;
+   border: 1px solid #22d172;
+}
+/* <<<<<================footr>>>> */
+.kyabolu{
+    padding-top: 100px;
+    padding-left: 10%;
+}
+.span1{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif
+}
+.kyabolu h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    
+
+}
+.blue{
+    width: 100%;
+    height: 400px;
+    background-image: url("./bgimage3.png");
+   
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    margin-top: -20px;
+    /* border: 1px solid coral; */
+   /* background-color: #202c45; */
+
+}
+#signup_free1{
+  
+    padding: 5px 20px ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #22D172;
+    border-radius: 8px ;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    height: 43px;
+    cursor: pointer;
+ 
+ }
+ #footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ }
+ .list01 li::marker{
+    color: #fff;
+
+    
+ }
+ .list01 li{
+    margin-left: -38px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #243F5C;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .list01 li:hover{
+    color: #22D172;
+    cursor: pointer;
+    
+ }
+ #test1{
+    width: 40px ;
+    height: 40px ;
+    border: 1px solid #202C45;
+    /* background-color: brown; */
+    border-left:  dashed;
+    border-width: 2px 1.9px 6px 0px;
+  
+    border-radius:40% 60% 35% 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  #footericon{
+    display: flex;
+    margin-bottom: 100px;
+  }
+.rail{
+    width: 120px;
+    height: 120px;
+    margin-left: 8%;
+    margin-top: 4%;
+}
