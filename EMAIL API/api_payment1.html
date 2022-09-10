@@ -9,60 +9,110 @@
     <link rel="stylesheet" href="api_payment.css">
 </head>
 <body>
-    <h1>Change Plan</h1>
-    <div id="form">
-        <!-- Card details -->
-        <div>
-            <div class="head">
-                <i class="fa-solid fa-credit-card"></i>
-                <h3>Add New Card to Proceed</h3>
-            </div>
-            <div id="form1">
-                <div>
-                    <label>Cardholder Name</label>
-                    <input type="text">
-                </div>
-                <div><label>Card Data</label></div>
-                <div>
-                    <div>
-                        <i class="fa-solid fa-credit-card"></i> 
-                        <input type="number" max="16" placeholder="Card number">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="MM/YY" max="5" >
-                        <input type="number" placeholder="CVC" max="3">
-                    </div>
-                </div>
-                <a href=""><button>Save</button></a>
-            </div>
+    <div id="testing">
+        <div id="sidenav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <img src="../asset/Screenshot 2022-09-10 015337.png" alt="">
             
+                <a href="#"><i class="fa-solid fa-location-arrow"></i>  Email APi </a>
+            
+                <a href="#"><i class="fa-regular fa-envelope"></i>  Sandbox</a>
+                <button class="dropbtn"><i class="fa-solid fa-wallet"></i>  Billing</button>
+                <div class="drop-content">
+                  <a href="../PAYMENT[sandbox]/sandbox.html"> Plans [Sandbox]</a>
+                  <a href="../EMAIL API/emailApi.html">Plans[Email Api]</a>
+                  <a href="../PAYMENT/payment.html"> Payment Method</a>
+                </div>
+                <a href="#"> <i class="fa-solid fa-wallet"></i>  User Management</a>
+                <a href="#"><i class="fa-solid fa-key"></i>  API</a>
+                <a href="#"><i class="fa-solid fa-note-sticky"></i>  Account Settings</a>
+              </div>
+              
+              
         </div>
-        <!-- payment -->
-        <div>
-            <div class="head">
-                <img src="https://img.icons8.com/ios/50/000000/note.png"/>
-                <h3>Payment Summary</h3>
-            </div>
-            <div id="form2">
-                <div>
-                    <h3>Individual 10K Plan</h3>
-                    <p>10,000 test emails per month</p>
-                    <h3>$10.0</h3>
-                </div>
-                <div>
-                    <h3>Total</h3>
-                    <h3>$10.0</h3>
-                </div>
-                <div>
-                    <p>Once your payment has been processed, your account will be upgraded immediately.</p>
-                </div>
-                <a href=""><button id="process">Process Payment</button></a>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Change Plans</span>
+            <div id="form">
+                <!-- Card details -->
+                <form>
+                    <div>
+                        <div class="head">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <h3>Add New Card to Proceed</h3>
+                        </div>
+                        <div id="form1">
+                            <div>
+                                <label>Cardholder Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div><label>Card Data</label></div>
+                            <div>
+                                <div>
+                                    <i class="fa-solid fa-credit-card"></i> 
+                                    <input type="number" max="16" placeholder="Card number" required>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="MM/YY" max="5" required>
+                                    <input type="number" placeholder="CVC" max="3" required>
+                                </div>
+                            </div>
+                            <a href=""><button id="saved">Save</button></a>
+                        </div>
+                        
+                    </div>
+                </form>
                 
+                <!-- payment -->
+                <div>
+                    <div class="head">
+                        <img src="https://img.icons8.com/ios/50/000000/note.png"/>
+                        <h3>Payment Summary</h3>
+                    </div>
+                    <div id="form2">
+                        <div>
+                            <h3>Individual 10K Plan</h3>
+                            <p>10,000 test emails per month</p>
+                            <h3>$10.0</h3>
+                        </div>
+                        <div>
+                            <h3>Total</h3>
+                            <h3>$10.0</h3>
+                        </div>
+                        <div>
+                            <p>Once your payment has been processed, your account will be upgraded immediately.</p>
+                        </div>
+                        <a href="emailApi.html"><button id="process">Process Payment</button></a>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     
+    
 </body>
 </html>
-<script src="payment.js"></script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "200px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+
+    const save = () =>{
+        alert("Card details saved successfully!");
+    }
+    document.getElementById("saved").addEventListener("submit", save);
+    const process = ()=>{
+        alert("Payment successful");
+
+    }
+    document.getElementById("process").addEventListener("click", process);
+
+</script>
