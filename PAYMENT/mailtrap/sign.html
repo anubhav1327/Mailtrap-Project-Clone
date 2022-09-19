@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+
+<link rel="stylesheet" href="sign.css">
+<body>
+
+  <nav id="navbar">
+    <div id="container">
+        <div class="class1">
+        <img src="https://mailtrap.io/wp-content/uploads/2021/04/mailtrap-new-logo.svg" alt="1" id="image">
+        <!-- <div id="space">
+            
+        </div> -->
+        
+    </div>
+    <div class="class0">
+    <div class="testing">Email Testing</div>
+        <div class="api">Email API</div>
+        <div class="price">Pricing</div>
+        <div class="resource">Resource</div>
+        <div id="log">
+            <button onclick="loginbtn()" class="login">Log In</button>
+            <button onclick="signup()" class="signup"> Sign Up</button>
+        </div>
+        </div>
+    </div>
+
+   </nav>
+
+
+    <div id="cont">
+    
+        <div id="abhicontainer">
+      
+          <section>
+            
+              <h1>Create Free Account</h1>
+              
+              <button>
+                 <a href=""><i class="fa-brands fa-google"></i> Use google account</a>
+               </button>
+               <button>
+                <a href=""> <i class="fa-brands fa-github"></i> Use github account</a>
+               </button>
+               <button>
+                  <a href=""> <i class="fa-brands fa-windows"></i> Use office account</a>
+                
+               </button>  
+      
+      
+               <p>Or</p>
+      
+         
+             
+              <input type="email" id="name" placeholder="Enter Email">
+              <input type="password" id="password" placeholder="Enter Password">
+              <input type="text" id="confirmation" placeholder="Enter confirmation">
+
+         <div id="chkbox1">
+              <input type="checkbox" id="chkbox">
+              <label for="chk">I'm not a robot <i class="fa fa-refresh" aria-hidden="true"></i></label>
+
+            </div>
+
+
+              <h5>You will receive the confirmation email after submitting this  <br> form.</h5>
+      
+              <button onclick="addUser()">SignUp</button>
+
+
+              <h5>By creating a Mailtrap account, you agree to our <br>
+                <i>Terms of Service</i>and &nbsp; <i>  Privacy Policy.</i> 
+                <br>
+                
+                We'll occasionally send you account related emails.</h5>
+              
+      
+          </section>
+      
+          <div id="cont2">
+              <img src="https://assets.mailtrap.io/packs/assets/landing/signup-29d04f096f43afe622ed.svg" alt="maillogo">
+      
+              <h4>No credit card needed</h4>
+              <h4>No contract needed</h4>
+          </div>
+      
+       </div>
+      
+      
+      
+      </div>
+
+
+      
+      <div id="footer">
+        <div class="rail">
+            <img src="./rail.png" alt="" class="rail">
+          
+        </div>
+        <div>  <h3>Mailtrap</h3>
+            <ul class="list01">
+                <li>Pricing </li>
+                <li>Changelog</li>
+                <li>Status</li>
+                <li>Term of Service </li>
+                <li>Privacy Policy </li>
+                <li>Navigational Information</li>
+                <li>DPA</li>
+            </ul></div>
+        <div>
+            <h3>Railsware Experience</h3>
+            <ul class="list01">
+                <li>Mailtrap Blog</li>
+                <li>Coupler.io</li>
+                <li>Smart Checklist for Jira</li>
+                <li>Career -Railsware Hiring</li>
+            </ul>
+        </div>
+        <div> 
+            <h3>Contact</h3>
+            <p id="eml">email: support@mailtrap.io</p>
+            <div id="footericon">
+                <div id="test1">
+                    <i class="fa-brands fa-facebook-f"></i>
+    
+                </div>
+                <div id="test1">
+                    
+                        <i class="fa-brands fa-twitter"></i>
+    
+               
+    
+                </div>
+                <div id="test1">
+                    <i class="fa-brands fa-linkedin-in"></i>
+    
+                </div>
+    
+            </div>
+            <div class="khtm">© Railsware Products Studio, Inc. </div>
+        </div>
+       </div>
+
+           
+      
+      <div id="bottmpart">
+        <div id="abhirails">© Railsware Products, Inc.</div>
+        <div id="abhipara">
+            <h2>What is Mailtrap?</h2>
+            Mailtrap is a test mail server solution that allows testing email notifications without sending them to the real users of your application. Not only does Mailtrap work as a powerful email test tool, it also lets you view your dummy emails online, forward them to your regular mailbox, share with the team and more! Mailtrap is a mail server test tool built by Railsware Products, Inc., a premium software development consulting company.
+        </div>
+      </div>
+        
+      
+      
+</body>
+</html>
+
+<script>
+  
+  async function addUser(){
+    var flag =true
+    let user_data={
+     
+
+        email: document.getElementById("name").value,
+        password: document.getElementById("password").value,
+        confirmation: document.getElementById("confirmation").value
+
+       
+
+    }
+    console.log(user_data);
+
+    
+var lowerCaseLetters = /[a-z]/g;
+var upperCaseLetters = /[A-Z]/g;
+var numbers = /[0-9]/g;
+
+
+       if(user_data.email==0){
+          flag=false;
+          alert('Please fill in Email');
+        }
+
+        else if(user_data.password.length == 0){
+         flag=false;
+         alert('Please fill in Password');
+
+
+        }else if(user_data.password < 8){
+    flag=false;
+    alert('Minimum Length should be 8');
+
+}else if(!user_data.password.match(numbers)){
+    flag=false;
+    alert('please add 1 number');
+
+}else if(!user_data.password.match(upperCaseLetters)){
+    flag=false;
+    alert('please add 1 uppercase letter');
+
+}else if(!user_data.password.match(lowerCaseLetters)){
+    flag=false;
+    alert('please add 1 lowercase letter');
+}
+   
+  else{
+    let res = await fetch("http://localhost:3000/users",{
+        method:'POST',
+        body : JSON.stringify(user_data), 
+        headers : {
+            'Content-Type' : "application/json"
+        }
+    });
+
+    let data = await res.json();
+    console.log(data);
+    alert("Your account has been created");
+    window.location="login.html";
+
+  }
+}
+
+function loginbtn(){
+    window.location="login.html"
+  }
+
+
+</script>
+
+
+<script src="https://kit.fontawesome.com/6604a6c321.js" crossorigin="anonymous"></script>
